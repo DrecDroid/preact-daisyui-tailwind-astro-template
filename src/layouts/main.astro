@@ -1,0 +1,21 @@
+---
+import "~/styles/global.css"
+---
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <slot name="head"></slot>
+</head>
+<body>
+  <nav class="navbar bg-neutral">
+    <a class="btn btn-ghost normal-case text-xl">Logo</a>
+  </nav>
+  <slot></slot>
+
+  <footer class="flex items-center gap-4 footer h-20 px-10 bg-neutral-focus">
+    <p>Made with Astro, DaisyUI, Tailwind.</p>
+  </footer>
+</body>
+</html>
